@@ -2,7 +2,7 @@
 venv/
 
 # 入出力はgit-hubには公開しない
-input.txt
+input.png
 output.txt
 
 # 他の一般的な Python 開発用無視リスト（推奨）
@@ -17,4 +17,4 @@ __pycache__/
 *.egg-info/
 .env
 .DS_Store
-.gitignore
+# .gitignore
