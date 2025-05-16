@@ -1,8 +1,9 @@
 # 仮想環境ディレクトリを無視（名前が venv の場合）
 venv/
 
-# 出力はgit-hubには公開しない
-# output.txt
+# 入出力はgit-hubには公開しない
+input.txt
+output.txt
 
 # 他の一般的な Python 開発用無視リスト（推奨）
 __pycache__/
