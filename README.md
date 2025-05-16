@@ -5,7 +5,7 @@
 
 ## ✅ 特徴
 
-- 日本語に対応したOCR（英語も簡単に追加可能）
+- 英語,日本語に対応したOCR
 - 認識結果と信頼度をファイルに保存
 - コンソールにもリアルタイム出力
 - シンプルなPythonスクリプト、カスタマイズ容易
@@ -23,7 +23,7 @@ pip install easyocr
 
 ## 🚀 使い方
 
-### 以下のように実行します：
+以下のように実行します：
 
 ```bash
 python ocr_script.py --input input.png --output output.txt
@@ -34,7 +34,7 @@ python ocr_script.py --input input.png --output output.txt
 
 ---
 
-##📄 出力例
+## 📄 出力例
 
 ```
 こんにちは（信頼度: 0.95）
@@ -43,7 +43,7 @@ python ocr_script.py --input input.png --output output.txt
 
 ---
 
-##📁 ファイル構成
+## 📁 ファイル構成
 ```bash
 .
 ├── LICENSE
@@ -66,4 +66,5 @@ python ocr_script.py --input input.png --output output.txt
 おそらくあまり正誤率が高くないかもしれません、
 
 その場合は、出力したテキストを ChatGPT などで校正を行ってください。
+
 （結構まともになりますが、最後は人で確認して下さい）
