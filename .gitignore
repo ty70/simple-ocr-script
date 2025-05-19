@@ -5,6 +5,8 @@ venv/
 input.png
 output.txt
 temp/
+input/
+output/
 
 # 他の一般的な Python 開発用無視リスト（推奨）
 __pycache__/
