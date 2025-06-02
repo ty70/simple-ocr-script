@@ -1,70 +1,74 @@
 # EasyOCR Japanese Text Extractor
 
-このリポジトリは、日本語を含む画像からテキストを抽出し、信頼度付きで出力するシンプルな OCR（光学式文字認識）スクリプトです。  
-[EasyOCR](https://github.com/JaidedAI/EasyOCR) を活用しており、CLI（コマンドラインインターフェース）から画像ファイルと出力先ファイルを指定できます。
+This repository provides a simple OCR (Optical Character Recognition) script that extracts text from images containing Japanese and outputs it with confidence scores.
+It utilizes [EasyOCR](https://github.com/JaidedAI/EasyOCR), and allows users to specify input image files and output destinations via a CLI (Command Line Interface).
 
-## ✅ 特徴
+## ✅ Features
 
-- 英語,日本語に対応したOCR
-- 認識結果と信頼度をファイルに保存
-- コンソールにもリアルタイム出力
-- シンプルなPythonスクリプト、カスタマイズ容易
+* OCR support for both English and Japanese
+* Save recognized text along with confidence scores to a file
+* Real-time output to the console
+* Simple Python script, easy to customize
 
 ---
 
-## 📦 インストール
+## 📦 Installation
 
-Python 3.7以上を推奨します。
+Python 3.7 or higher is recommended.
 
 ```bash
 pip install easyocr
 ```
+
 ---
 
-## 🚀 使い方
+## 🚀 Usage
 
-以下のように実行します：
+Run the script as follows:
 
 ```bash
 python ocr_script.py --input input.png --output output.txt
 ```
 
-- `--input`: OCRを行う入力画像ファイル
-- `--output`: 認識結果を保存するテキストファイル
+* `--input`: Input image file for OCR processing
+* `--output`: Text file to save the recognition results
 
 ---
 
-## 📄 出力例
+## 📄 Sample Output
 
 ```
-こんにちは（信頼度: 0.95）
-ようこそ（信頼度: 0.89）
+こんにちは (Confidence: 0.95)
+ようこそ (Confidence: 0.89)
 ```
 
 ---
 
-## 📁 ファイル構成
+## 📁 File Structure
+
 ```bash
 .
 ├── LICENSE
-├── ocr_script.py      # メインスクリプト
-├── README.md          # 本ファイル
+├── ocr_script.py      # Main script
+├── README_ja.md       # Japanese version
+├── README.md          # This file
 ├── requirements.txt
-├── sample.png         # 入力サンプル
-└── sample.txt         # 出力サンプル
+├── sample.png         # Sample input
+└── sample.txt         # Sample output
 ```
 
 ---
 
-## ⚖️ ライセンス
-このリポジトリは MIT [License](./LICENSE) のもとで公開されています。
+## ⚖️ License
+
+This repository is released under the MIT [License](./LICENSE).
 
 ---
 
-## ⚠️ 注意点
+## ⚠️ Notes
 
-OCR の認識精度は画像の品質や文字フォントに依存します。
+OCR accuracy depends on image quality and font types.
 
-誤認識がある場合は、出力されたテキストをChatGPT などのツールで校正・再構成することで精度を補完できます。
+If recognition errors occur, you can refine and restructure the extracted text using tools like ChatGPT.
 
-最終的な確認は人間の目で行うことを推奨します。
+We recommend a final manual check for best results.
